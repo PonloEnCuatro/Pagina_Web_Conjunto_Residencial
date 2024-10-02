@@ -1,103 +1,143 @@
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;  /* Establece la fuente predeterminada del cuerpo de la página */
+  background-color: #f4f4f4;      /* Color de fondo claro para el cuerpo */
+  margin: 0;                      /* Elimina los márgenes predeterminados del body */
+  padding: 0;                     /* Elimina el padding predeterminado del body */
 }
 
+/* Contenedor principal de la cápsula */
 .Capsula_Pricipal {
-  width: 80%;
-  margin: 0 auto;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;                     /* Define el ancho del contenedor al 80% de la pantalla */
+  margin: 0 auto;                 /* Centra horizontalmente el contenedor */
+  background-color: white;        /* Fondo blanco para resaltar el contenido */
+  padding: 20px;                  /* Espaciado interno (padding) de 20px */
+  border-radius: 20px;            /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Sombra ligera alrededor del contenedor */
 }
 
+/* Estilos para los títulos principales */
 .Titulo h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2rem;                /* Tamaño de fuente grande para el título principal */
+  margin-bottom: 20px;            /* Espaciado inferior del título */
 }
 
+/* Títulos secundarios (h2 y h3) */
 h2 {
-  font-size: 1.5rem;
-  margin-top: 20px;
+  font-size: 1.5rem;              /* Tamaño de fuente menor para subtítulos */
+  margin-top: 20px;               /* Espaciado superior */
 }
 
 h3 {
-  margin-top: 40px;
+  margin-top: 40px;               /* Mayor espaciado superior para un subtítulo más pequeño */
 }
 
+/* Estilos generales para formularios */
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: flex;                  /* Utiliza un contenedor flexible */
+  flex-direction: column;         /* Los elementos del formulario se organizan en columna */
+  gap: 15px;                      /* Espacio entre los elementos del formulario */
 }
-
+/* Estilos generales para campos de entrada de texto, números y correo */
 input[type="text"],
 input[type="number"],
-input[type="date"],
-input[type="email"] {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+input[type="email"],
+input[type="date"]{
+  padding: 10px;                  /* Espaciado interno de 10px */
+  padding-inline: 10px;           /* Ajuste de espaciado interno a los lados */
+  border-radius: 10px;             /* Bordes redondeados */
+  border: 1px solid #ccc;         /* Borde gris claro */
 }
-
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
 /* Estilos para la barra de progreso */
 .Barra_Progreso {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-  position: relative;
+  display: flex;                  /* Flexbox para distribuir los pasos */
+  justify-content: space-between; /* Espacia los elementos de forma equitativa */
+  margin: 20px 0;                 /* Espaciado superior e inferior */
+  position: relative;             /* Relativo para colocar el pseudo-elemento */
 }
 
+/* Línea de progreso horizontal */
 .Barra_Progreso::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 15%;
-  right: 15%;
-  height: 2px;
-  background-color: #ccc;
-  z-index: 0;
+  content: '';                    /* Crea una línea con un pseudo-elemento */
+  position: absolute;             /* Posición absoluta para que abarque todo el ancho */
+  top: 50%;                       /* Centra la línea verticalmente */
+  left: 15%;                      /* Inicio de la línea (desde la izquierda) */
+  right: 15%;                     /* Final de la línea (desde la derecha) */
+  height: 2px;                    /* Altura de la línea */
+  background-color: #ccc;         /* Color gris claro para la línea */
+  z-index: 0;                     /* Hace que la línea esté detrás de los círculos */
 }
 
+/* Círculos para los pasos de la barra de progreso */
 .Barra_Progreso div {
-  width: 50px;
-  height: 50px;
-  background-color: #ccc;
-  border-radius: 50%;
-  position: relative;
-  text-align: center;
-  line-height: 50px;
-  font-size: 1.2rem;
-  color: white;
-  z-index: 1;
+  width: 50px;                    /* Anchura de los círculos */
+  height: 50px;                   /* Altura de los círculos */
+  background-color: #ccc;         /* Fondo gris por defecto */
+  border-radius: 50%;             /* Hace los divs circulares */
+  position: relative;             /* Relativo para colocar el texto centrado */
+  text-align: center;             /* Centra el texto horizontalmente */
+  line-height: 50px;              /* Centra el texto verticalmente */
+  font-size: 1.2rem;              /* Tamaño de fuente dentro de los círculos */
+  color: white;                   /* Color del texto blanco */
+  z-index: 1;                     /* Hace que el círculo esté encima de la línea */
 }
 
+/* Paso activo en la barra de progreso */
 .Barra_Progreso .RegistroPropietarios {
-  background-color: #4CAF50; /* Paso activo */
+  background-color: #4CAF50;      /* Cambia el fondo a verde para el paso activo */
 }
 
+/* Paso inactivo en la barra de progreso */
 .Barra_Progreso .RegistroMascotas {
-  background-color: #ccc; /* Paso no activo */
+  background-color: #ccc;         /* Fondo gris para los pasos inactivos */
 }
 
-/* Estilo para el paso activo */
+/* Clase general para el paso activo */
 .step-active {
-  background-color: #4CAF50 !important;
+  background-color: #4CAF50 !important; /* Asegura que el paso activo siempre sea verde */
+}
+
+/* Estilos para varias secciones con diferentes números de columnas */
+.D_I, .D_INM {
+  padding: 20px;                  /* Espaciado interno de 20px */
+  columns: 4;                     /* Divide en 4 columnas */
+}
+
+.D_A {
+  padding: 20px;                  /* Espaciado interno de 20px */
+  columns: 7;                     /* Divide en 7 columnas */
+}
+
+.D_P {
+  padding: 20px;                  /* Espaciado interno de 20px */
+  columns: 6;                     /* Divide en 6 columnas */
+}
+
+.Fecha {
+  padding: 20px;                  /* Espaciado interno de 20px */
+}
+/* Clase para una sección con 4 columnas */
+.D_C_F {
+  padding: 20px;                  /* Espaciado interno de 20px */
+  columns: 4;                     /* Divide la sección en 4 columnas */
+}
+/* Cambios en el botón de envío al hacer hover */
+input[type="submit"]:hover {
+  background-color: #45a049;      /* Cambia el color de fondo a un verde más oscuro al hacer hover */
+}
+/* Estilos para el botón de envío */
+input[type="submit"] {
+  background-color: #4CAF50;      /* Fondo verde */
+  color: white;                   /* Texto en blanco */
+  padding: 10px 20px;             /* Espaciado interno del botón */
+  border: none;                   /* Elimina bordes */
+  border-radius: 5px;             /* Bordes redondeados */
+  cursor: pointer;                /* Cambia el cursor a puntero al pasar sobre el botón */
+  margin-top: 20px;               /* Espaciado superior del botón */
+}
+
+/* Estilos para .RegistroMascotas */
+.DATOS_MASCOTA{
+  padding: 20px;
+  columns: 3;
 }
