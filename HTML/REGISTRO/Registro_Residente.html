@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="/css/REGISTRO/Registro_style.css">
+  <script src="/js/REGISTRO/Registro_script.js"></script>
+</head>
+<body>
+  <!--Capsula principal-->
+  <div class="Capsula_Pricipal">
+    <!--Nombre del conjunto-->
+    <div class="Titulo">
+      <center><h1>Registro del Conjunto</h1></center>
+    </div>
+    <!--Barra de progreso-->
+    <div class="Barra_Progreso">
+      <!--REGISTRO DE PROPIETARIOS-->
+      <div class="RegistroPropietarios">1</div>
+      <!--REGISTRO DE MASCOTAS-->
+      <div class="RegistroMascotas">2</div>
+    </div>
+  <!--Sección-->
+  <div class="Seccion">
+    <!--Registro de propietarios-->
+    <h3>REGISTRO DE PROPIETARIOS</h3>
+     <!-- Capsula de Fecha de actualización -->
+     <div class="fecha_Actualizacion">
+      <h2>Fecha de Actualización</h2>
+      <form action="Fecha">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha">
+      </form>
+    </div>
+
+    <!-- Datos del inmueble -->
+    <div class="Datos_Inmueble">
+      <h2>Datos del Inmueble</h2>
+      <form action="Datos_Inmueble">
+        <label for="torre">Torre:</label>
+        <input type="text" id="torre" name="torre" placeholder="TORRE" required>
+
+        <label for="apartamento">Apartamento:</label>
+        <input type="text" id="apartamento" name="apartamento" placeholder="APARTAMENTO" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="number" id="telefono" name="telefono" placeholder="TELÉFONO">
+
+        <label for="matricula">Matrícula Inmobiliaria:</label>
+        <input type="text" id="matricula" name="matricula" placeholder="MATRÍCULA INMOBILIARIA">
+      </form>
+    </div>
+
+    <!-- Datos del propietario -->
+    <div class="Datos_Propietario">
+      <h2>Datos del Propietario</h2>
+      <form action="Datos_Propietario">
+        <label for="nombre_propietario">Nombres:</label>
+        <input type="text" id="nombre_propietario" name="nombre_propietario" placeholder="NOMBRES" required>
+
+        <label for="apellido_propietario">Apellidos:</label>
+        <input type="text" id="apellido_propietario" name="apellido_propietario" placeholder="APELLIDOS" required>
+
+        <label for="telefono_celular_propietario">Teléfono Celular:</label>
+        <input type="text" id="telefono_celular_propietario" name="telefono_celular_propietario" placeholder="TELÉFONO CELULAR" required>
+
+        <label for="correo_propietario">Correo:</label>
+        <input type="email" id="correo_propietario" name="correo_propietario" placeholder="CORREO" required>
+
+        <label for="empresa_propietario">Empresa Donde Labora:</label>
+        <input type="text" id="empresa_propietario" name="empresa_propietario" placeholder="EMPRESA DONDE LABORA" required>
+
+        <label for="telefono_empresa_propietario">Teléfono:</label>
+        <input type="text" id="telefono_empresa_propietario" name="telefono_empresa_propietario" placeholder="TELÉFONO" required>
+      </form>
+    </div>
+
+    <!-- Datos del arrendatario -->
+    <div class="Datos_Arrendatario">
+      <h2>Datos del Arrendatario</h2>
+      <form action="Datos_Arrendatario">
+        <label for="nombre_arrendatario">Nombres:</label>
+        <input type="text" id="nombre_arrendatario" name="nombre_arrendatario" placeholder="NOMBRES" required>
+
+        <label for="apellido_arrendatario">Apellidos:</label>
+        <input type="text" id="apellido_arrendatario" name="apellido_arrendatario" placeholder="APELLIDOS" required>
+
+        <label for="telefono_celular_arrendatario">Teléfono Celular:</label>
+        <input type="text" id="telefono_celular_arrendatario" name="telefono_celular_arrendatario" placeholder="TELÉFONO CELULAR" required>
+
+        <label for="correo_arrendatario">Correo:</label>
+        <input type="email" id="correo_arrendatario" name="correo_arrendatario" placeholder="CORREO" required>
+
+        <label for="empresa_arrendatario">Empresa Donde Labora:</label>
+        <input type="text" id="empresa_arrendatario" name="empresa_arrendatario" placeholder="EMPRESA DONDE LABORA" required>
+
+        <label for="telefono_empresa_arrendatario">Teléfono:</label>
+        <input type="text" id="telefono_empresa_arrendatario" name="telefono_empresa_arrendatario" placeholder="TELÉFONO" required>
+
+        <label for="emergencia_arrendatario">En Caso de Emergencia Avisar:</label>
+        <input type="number" id="emergencia_arrendatario" name="emergencia_arrendatario" placeholder="EN CASO DE EMERGENCIA AVISAR" required>
+      </form>
+    </div>
+
+    <!-- Datos de la empresa inmobiliaria -->
+    <div class="Datos_Imobiliadria_Opcional">
+      <h2>Datos de la Empresa Inmobiliaria</h2>
+      <p>(Solo en caso de ser arrendado por inmobiliaria)</p>
+      <form action="Datos_Imobiliadria">
+        <label for="inmobiliaria">Inmobiliaria:</label>
+        <input type="text" id="inmobiliaria" name="inmobiliaria" placeholder="INMOBILIARIA">
+
+        <label for="contacto_inmobiliaria">Contacto:</label>
+        <input type="text" id="contacto_inmobiliaria" name="contacto_inmobiliaria" placeholder="CONTACTO">
+
+        <label for="telefono_inmobiliaria">Teléfono:</label>
+        <input type="number" id="telefono_inmobiliaria" name="telefono_inmobiliaria" placeholder="TELÉFONO">
+
+        <label for="correo_inmobiliaria">Correo Electrónico:</label>
+        <input type="email" id="correo_inmobiliaria" name="correo_inmobiliaria" placeholder="CORREO ELECTRÓNICO">
+      </form>
+    </div>
+
+    <!-- Datos de la composición familiar -->
+    <div class="DATOS_COMPOSI_FAMILIAR_RESIDE">
+      <h2>Datos Composición Familiar y de Residentes</h2>
+      <form action="Datos_Composi_Familiar">
+        <label for="nombre_residente1">Nombres y Apellidos:</label>
+        <input type="text" id="nombre_residente1" name="nombre_residente1" placeholder="NOMBRES Y APELLIDOS" required>
+        <input type="text" id="nombre_residente2" name="nombre_residente2" placeholder="NOMBRES Y APELLIDOS" required>
+        <input type="text" id="nombre_residente3" name="nombre_residente3" placeholder="NOMBRES Y APELLIDOS" required>
+        <input type="text" id="nombre_residente4" name="nombre_residente4" placeholder="NOMBRES Y APELLIDOS" required>
+
+        <label for="edad_residente1">Edad:</label>
+        <input type="number" id="edad_residente1" name="edad_residente1" placeholder="EDAD" required>
+        <input type="number" id="edad_residente2" name="edad_residente2" placeholder="EDAD" required>
+        <input type="number" id="edad_residente3" name="edad_residente3" placeholder="EDAD" required>
+        <input type="number" id="edad_residente4" name="edad_residente4" placeholder="EDAD" required>
+
+        <label for="parentesco_residente1">Parentesco:</label>
+        <input type="text" id="parentesco_residente1" name="parentesco_residente1" placeholder="PARENTESCO" required>
+        <input type="text" id="parentesco_residente2" name="parentesco_residente2" placeholder="PARENTESCO" required>
+        <input type="text" id="parentesco_residente3" name="parentesco_residente3" placeholder="PARENTESCO" required>
+        <input type="text" id="parentesco_residente4" name="parentesco_residente4" placeholder="PARENTESCO" required>
+
+        <label for="ocupacion_residente1">Ocupación:</label>
+        <input type="text" id="ocupacion_residente1" name="ocupacion_residente1" placeholder="OCUPACIÓN" required>
+        <input type="text" id="ocupacion_residente2" name="ocupacion_residente2" placeholder="OCUPACIÓN" required>
+        <input type="text" id="ocupacion_residente3" name="ocupacion_residente3" placeholder="OCUPACIÓN" required>
+        <input type="text" id="ocupacion_residente4" name="ocupacion_residente4" placeholder="OCUPACIÓN" required>
+      </form>
+    </div>
+
+
+  </div>
+
+  <!--Botón Guardar y Continuar-->
+  <div class="Boton_Guardar_Continuar">
+    <a href="/HTML/REGISTRO/Registro_Mascota.html"><input type="submit" value="Guardar y Continuar"></a>
+  </div>
+</body>
+</html>

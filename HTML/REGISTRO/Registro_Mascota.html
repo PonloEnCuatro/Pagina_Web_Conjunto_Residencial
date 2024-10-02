@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="/css/REGISTRO/Registro_style.css">
+  <script src="/js/REGISTRO/Registro_script.js"></script>
+</head>
+<body>
+  <!--Capsula principal-->
+  <div class="Capsula_Pricipal">
+    <!--Nombre del conjunto-->
+    <div class="Titulo">
+      <center><h1>Registro del Conjunto</h1></center>
+    </div>
+    <!--Barra de progreso-->
+    <div class="Barra_Progreso">
+      <!--REGISTRO DE PROPIETARIOS-->
+      <div class="RegistroPropietarios">1</div>
+      <!--REGISTRO DE MASCOTAS-->
+      <div class="RegistroMascotas">2</div>
+    </div>
+  <!--Sección-->
+  <div class="Seccion">
+    <!--Registro de Mascotas-->
+    <h3>REGISTRO DE MASCOTAS</h3>
+    <!-- Datos de la mascota -->
+    <div class="DATOS_MASCOTA">
+      <h2>Datos de la Mascota</h2>
+      <form action="Datos_Mascota">
+        <label for="tipo_mascota">Tipo:</label>
+        <input type="text" id="tipo_mascota" name="tipo_mascota" placeholder="TIPO">
+
+        <label for="raza_mascota">Raza:</label>
+        <input type="text" id="raza_mascota" name="raza_mascota" placeholder="RAZA">
+
+        <label for="nombre_mascota">Nombre:</label>
+        <input type="text" id="nombre_mascota" name="nombre_mascota" placeholder="NOMBRE">
+      </form>
+    </div>
+
+    <!--Botón Guardar y Continuar-->
+  <div class="Boton_Guardar_Continuar">
+    <a href="#"><input type="submit" value="Guardar y Continuar"></a>
+  </div>
+  </div> <!--Capsula principal-->
+</body>
+</html>

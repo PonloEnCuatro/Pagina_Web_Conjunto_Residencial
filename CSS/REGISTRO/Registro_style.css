@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.Capsula_Pricipal {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Titulo h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+h3 {
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para la barra de progreso */
+.Barra_Progreso {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  position: relative;
+}
+
+.Barra_Progreso::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  right: 15%;
+  height: 2px;
+  background-color: #ccc;
+  z-index: 0;
+}
+
+.Barra_Progreso div {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.2rem;
+  color: white;
+  z-index: 1;
+}
+
+.Barra_Progreso .RegistroPropietarios {
+  background-color: #4CAF50; /* Paso activo */
+}
+
+.Barra_Progreso .RegistroMascotas {
+  background-color: #ccc; /* Paso no activo */
+}
+
+/* Estilo para el paso activo */
+.step-active {
+  background-color: #4CAF50 !important;
+}
