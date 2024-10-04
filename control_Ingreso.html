@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="/estilos/styleIngreso.css">
+    <link rel="icon" type="image/x-icon" href="/imagenes/twin_tower_vector_twin_building_set_twin_building_icon_icon_188564.ico">
+    <script>
+        function refrescarEliminar() {
+            window.location.href = 'control_Ingreso.html';
+        }
+
+        function refrescarEnviar() {
+            window.location.href = 'control_Ingreso.html';
+        }
+
+        function inicio() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+
+<body>
+    <script src="/javaScript/main.js"></script>
+    <div class="Contenedor">
+        <div class="titulo">Registro Entrada</div>
+        <form action="/index.html">
+            <div class="formulario">
+                <label for="nombre">Nombres</label>
+                <input id="nombre" type="text" class="caja" placeholder="Ingrese los Nombres">
+            </div>
+            <div class="formulario">
+                <label for="apellido">Apellidos</label>
+                <input id="apellido" type="text" class="caja" placeholder="Ingrese los Apellidos" required>
+            </div>
+            <div class="formulario">
+                <label for="cedula">Cédula</label>
+                <input id="cedula" type="text" class="caja" placeholder="Ingrese la Cédula" required>
+            </div>
+            <div class="formulario">
+                <label for="telefono">Celular</label>
+                <input id="telefono" type="tel" class="caja" placeholder="Ingrese el Teléfono Celular" required>
+            </div>
+            <div class="formulario">
+                <label for="numeroTorre">Numero de Torre</label>
+                <input id="numeroTorre" type="number" class="caja" placeholder="Ingrese Numero de Torre" required>
+            </div>
+            <div class="formulario">
+                <label for="apartamento">Apartemento</label>
+                <input id="apartamento" type="number" class="caja" placeholder="Ingrese el Apartamento" required>
+            </div>
+            <div class="formulario">
+                <label for="fechaIngreso">Fecha de Ingreso</label>
+                <input id="fechaIngreso" type="date" class="caja" required>
+            </div>
+            <div class="formulario">
+                <label for="horaEntrada">Hora Entrada</label>
+                <input id="horaEntrada" type="time" class="caja" required>
+            </div>
+        </form>
+        <div class="titulo">Registro Salida</div>
+        <form action="/index.html">
+            <div class="formulario">
+                <label for="Nombre">Nombres</label>
+                <input id="Nombre" type="text" class="caja" placeholder="Ingrese los Nombres" required>
+            </div>
+            <div class="formulario">
+                <label for="Apellido">Apellidos</label>
+                <input id="Apellido" type="text" class="caja" placeholder="Ingrese los Apellidos" required>
+            </div>
+            <div class="formulario">
+                <label for="Cedula">Cedula</label>
+                <input id="Cedula" type="text" class="caja" placeholder="Ingrese la Cedula" required>
+            </div>
+            <div class="formulario">
+                <label for="NumeroDeTorre">Celular</label>
+                <input id="NumeroDeTorre" type="text" class="caja" placeholder="Ingrese el Telefono Celular" required>
+            </div>
+            <div class="formulario">
+                <label for="numTorre">Numero de Torre</label>
+                <input id="numTorre" type="number" class="caja" placeholder="Ingrese el Apartamento" required>
+            </div>
+            <div class="formulario">
+                <label for="apart">Apartamento</label>
+                <input id="apart" type="text" class="caja" placeholder="Ingrese el Apartamento" required>
+            </div>
+            <div class="formulario">
+                <label for="FechaSalida">Fecha de Salida</label>
+                <input id="FechaSalida" type="date" class="caja" required>
+            </div>
+            <div class="formulario">
+                <label for="horaSalida">Hora Salida</label>
+                <input id="horaSalida" type="time" class="caja" required>
+            </div>
+        </form>
+        <div class="upload-container"></div>
+        <div class="upload-box">
+            <p>Arrastra la cedula aqui</p>
+        </div>
+        <div class="upload-button">
+            <!-- <input type="file" accept="imagen" />-->
+            <img src="img.png">
+            <input type="file" id="fileInput">
+
+        </div>
+        <div class="botonEnviar">
+            <input id="registrar" type="submit" value="Registrar" onclick="refrescarEnviar(), inicio()">
+            <input id="eliminar" type="submit" value="Eliminar" onclick="refrescarEliminar()">
+            <input id="inicio" type="submit" value="Inicio" onclick="inicio()">
+        </div>
+    </div>
+
+
+    <script>
+    </script>
+</body>
+
+</html>

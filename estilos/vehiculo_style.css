@@ -1,0 +1,196 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.Registro_vehiculo {
+    background-color: #FFFFFF;
+    margin: 50px;
+    margin-top: 50px;
+    width: 450px;
+    padding: 50px;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 5px 6px 15px #000;
+}
+
+.Entrada_salida {
+    background-color: #FFFFFF;
+    margin: 50px;
+    margin-top: 50px;
+    width: 450px;
+    padding: 50px;
+    float: right;
+    border-radius: 10px;
+    box-shadow: 5px 6px 15px #000;
+}
+
+.regis {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #4CAF50;
+    font-family: 'calibri';
+    font-size: 15px
+}
+
+.tante {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #4CAF50;
+    font-family: 'calibri';
+    font-size: 15px
+}
+
+.Entra_Sali {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #4CAF50;
+    font-family: 'calibri';
+    font-size: 15px
+}
+
+.Vehi_Data {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #4CAF50;
+    font-family: 'calibri';
+    font-size: 15px
+}
+
+.Vis_Data {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #4CAF50;
+    font-family: 'calibri';
+    font-size: 15px
+}
+
+.apa {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #4CAF50;
+    font-family: 'calibri';
+    font-size: 15px
+}
+
+.vehi {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #4CAF50;
+    font-family: 'calibri';
+    font-size: 15px
+}
+
+.prop {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #4CAF50;
+    font-family: 'calibri';
+    font-size: 15px
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'calibri';
+    text-align: center;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'calibri';
+    text-align: center;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'calibri';
+    text-align: center;
+}
+
+.Data_vehi .button_send {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 49%;
+    border: 1px solid #4CAF50;
+}
+
+.Data_vehi .button_save {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 49%;
+    border: 1px solid #4CAF50;
+}
+
+.Entrada_salida .button_save2 {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 49%;
+    border: 1px solid #4CAF50;
+}
+
+.Entrada_salida p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'calibri';
+    text-align: center;
+    font-size: 17px;
+}
+
+.Registro_vehiculo p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'calibri';
+    text-align: center;
+    font-size: 17px;
+}
+
+.Entrada_salida textarea {
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Registro_vehiculo textarea {
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

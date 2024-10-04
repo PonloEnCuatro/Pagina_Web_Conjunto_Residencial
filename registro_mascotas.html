@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/estilos/R_Mascota_Style.css">
+    <link rel="icon" type="image/x-icon" href="/imagenes/twin_tower_vector_twin_building_set_twin_building_icon_icon_188564.ico">
+    <script src="/javaScript/main.js"></script>
+    <script>
+        function inicio() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Cápsula principal -->
+    <div class="Capsula_Pricipal">
+
+        <!-- Nombre del conjunto -->
+        <div class="Titulo">
+            <center>
+                <h1>Registro del Conjunto</h1>
+            </center>
+        </div>
+
+        <!-- Barra de progreso -->
+        <div class="Barra_Progreso">
+            <!-- REGISTRO DE PROPIETARIOS -->
+            <div class="RegistroPropietarios">1</div>
+            <!-- REGISTRO DE MASCOTAS -->
+            <div class="RegistroMascotas">2</div>
+        </div>
+        <!--Capsula principal-->
+        <div class="Capsula_Pricipal">
+            <!--REGISTRO DE MASCOTAS-->
+            <div class="RegistroMascotas"></div>
+
+            <h3>REGISTRO DE MASCOTAS</h3>
+            <div class="Colum_R_M">
+                <form id="formMascota">
+                    <label for="nombreMascota">Nombre de la Mascota:</label>
+                    <input type="text" id="nombreMascota" name="nombreMascota" required>
+                    <label for="tipoMascota">Tipo de Mascota:</label>
+                    <input type="text" id="tipoMascota" name="tipoMascota" required>
+                    <label for="razaMascota">Raza de la Mascota:</label>
+                    <input type="text" id="razaMascota" name="razaMascota" required>
+                </form>
+            </div>
+        </div>
+        <!--Botón de enviar formulario de registro-->
+        <div class="Boton_Enviar"></div>
+        <a href="#"><button type="submit" class="Boton_Enviar_Completo" onclick="inicio()">Enviar</button></a>
+    </div>
+    <!--Fin de Cápsula principal-->
+
+
+</body>
+
+</html>

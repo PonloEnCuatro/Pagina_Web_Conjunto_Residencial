@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="/estilos/styleIndex.css">
+    <link rel="icon" type="image/x-icon" href="/imagenes/twin_tower_vector_twin_building_set_twin_building_icon_icon_188564.ico">
+    <script>
+        function controlIngreso() {
+            window.location.href = 'control_Ingreso.html';
+        }
+
+        function registroMascotas() {
+            window.location.href = 'registro_mascotas.html';
+        }
+
+        function registroResidentes() {
+            window.location.href = 'registro_residentes.html';
+        }
+
+        function controlVehiculo() {
+            window.location.href = 'control_vehiculo.html';
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="Pagina_principal">
+        <header class="Encabezado">
+            <div class="Parte_de_arriba">
+                <svg class="Chulo" fill="none" height="24" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+                <span class="Titulo_de_Arriba">El Union Magdalena</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="controlIngreso()">Control de ingreso</a></li>
+                    <li><a href="#" onclick="controlVehiculo()">Control de vehiculo</a></li>
+                    <li><a href="#" onclick="registroResidentes()">Registro de propietario</a></li>
+                    <li><a href="#" onclick="registroMascotas()">Resgistro de mascota</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="Boton_de_Login">Login</a>
+        </header>
+        <main class="Titulo_Subtitulo_Boton_de_Empezar">
+            <h1 class="Titulo"><span>El Union Magdalena</span></h1>
+            <p class="Subtitulo">Conjunto Residencial</p>
+            <a href="#" class="BotonEmpienza">Register</a>
+        </main>
+    </div>
+</body>
+
+</html>
