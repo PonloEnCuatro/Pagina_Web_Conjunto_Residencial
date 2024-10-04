@@ -10,13 +10,11 @@
 <body>
   <!-- Cápsula principal -->
   <div class="Capsula_Pricipal">
-    
-    <!-- Nombre del conjunto -->
     <div class="Titulo">
       <center><h1>Registro de Propietarios/Residente</h1></center>
     </div>
-    
     <!-- Barra de progreso -->
+
     <div class="Barra_Progreso">
       <!-- REGISTRO DE PROPIETARIOS -->
       <div class="RegistroPropietarios">1</div>
@@ -28,10 +26,10 @@
     <div class="Seccion">
       <!-- Cápsula de Fecha de actualización -->
       <div class="fecha_Actualizacion">
-        <center><h2>Fecha de Actualización</h2></center>
+        <center><h3>Fecha de Actualización</h3></center>
         <div class="Fecha">
           <form action="Fecha">
-            <label for="fecha">Fecha:</label>
+            <label for="fecha" class="Fecha">Fecha:</label>
             <input type="date" name="party" min="2024-10-01" max="2024-10-31" />
           </form>
         </div>
@@ -82,36 +80,6 @@
           </form>
         </div>
       </div>
-
-      <!-- Datos del arrendatario -->
-      <div class="Datos_Arrendatario">
-        <center><h2>Datos del Arrendatario</h2></center>
-        <div class="D_A">
-          <form action="Datos_Arrendatario">
-            <label for="nombre_arrendatario">Nombres:</label>
-            <input type="text" id="nombre_arrendatario" name="nombre_arrendatario" placeholder="NOMBRES" required>
-
-            <label for="apellido_arrendatario">Apellidos:</label>
-            <input type="text" id="apellido_arrendatario" name="apellido_arrendatario" placeholder="APELLIDOS" required>
-
-            <label for="telefono_celular_arrendatario">Teléfono Celular:</label>
-            <input type="text" id="telefono_celular_arrendatario" name="telefono_celular_arrendatario" placeholder="TELÉFONO CELULAR" required>
-
-            <label for="correo_arrendatario">Correo:</label>
-            <input type="email" id="correo_arrendatario" name="correo_arrendatario" placeholder="CORREO" required>
-
-            <label for="empresa_arrendatario">Empresa Donde Labora:</label>
-            <input type="text" id="empresa_arrendatario" name="empresa_arrendatario" placeholder="EMPRESA DONDE LABORA" required>
-
-            <label for="telefono_empresa_arrendatario">Teléfono:</label>
-            <input type="text" id="telefono_empresa_arrendatario" name="telefono_empresa_arrendatario" placeholder="TELÉFONO" required>
-
-            <label for="emergencia_arrendatario">Teléfono Emergencia:</label>
-            <input type="number" id="emergencia_arrendatario" name="emergencia_arrendatario" placeholder="EMERGENCIA" required>
-          </form>
-        </div>
-      </div>
-
       <!-- Datos de la empresa inmobiliaria (Opcional) -->
       <div class="Datos_Inmobiliaria_Opcional">
         <center>
@@ -141,28 +109,28 @@
         <div class="D_C_F">
           <form action="Datos_Composi_Familiar">
             <label for="nombre_residente1">Nombres y Apellidos:</label>
-            <input type="text" id="nombre_residente1" name="nombre_residente1" placeholder="NOMBRES Y APELLIDOS" required>
-            <input type="text" id="nombre_residente2" name="nombre_residente2" placeholder="NOMBRES Y APELLIDOS" required>
-            <input type="text" id="nombre_residente3" name="nombre_residente3" placeholder="NOMBRES Y APELLIDOS" required>
-            <input type="text" id="nombre_residente4" name="nombre_residente4" placeholder="NOMBRES Y APELLIDOS" required>
+            <input type="text" id="nombre_residente1" name="nombre_residente1" placeholder="NOMBRES Y APELLIDOS">
+            <input type="text" id="nombre_residente2" name="nombre_residente2" placeholder="NOMBRES Y APELLIDOS">
+            <input type="text" id="nombre_residente3" name="nombre_residente3" placeholder="NOMBRES Y APELLIDOS">
+            <input type="text" id="nombre_residente4" name="nombre_residente4" placeholder="NOMBRES Y APELLIDOS">
 
             <label for="edad_residente1">Edad:</label>
-            <input type="number" id="edad_residente1" name="edad_residente1" placeholder="EDAD" required>
-            <input type="number" id="edad_residente2" name="edad_residente2" placeholder="EDAD" required>
-            <input type="number" id="edad_residente3" name="edad_residente3" placeholder="EDAD" required>
-            <input type="number" id="edad_residente4" name="edad_residente4" placeholder="EDAD" required>
+            <input type="number" id="edad_residente1" name="edad_residente1" placeholder="EDAD" >
+            <input type="number" id="edad_residente2" name="edad_residente2" placeholder="EDAD" >
+            <input type="number" id="edad_residente3" name="edad_residente3" placeholder="EDAD" >
+            <input type="number" id="edad_residente4" name="edad_residente4" placeholder="EDAD" >
 
             <label for="parentesco_residente1">Parentesco:</label>
-            <input type="text" id="parentesco_residente1" name="parentesco_residente1" placeholder="PARENTESCO" required>
-            <input type="text" id="parentesco_residente2" name="parentesco_residente2" placeholder="PARENTESCO" required>
-            <input type="text" id="parentesco_residente3" name="parentesco_residente3" placeholder="PARENTESCO" required>
-            <input type="text" id="parentesco_residente4" name="parentesco_residente4" placeholder="PARENTESCO" required>
+            <input type="text" id="parentesco_residente1" name="parentesco_residente1" placeholder="PARENTESCO" >
+            <input type="text" id="parentesco_residente2" name="parentesco_residente2" placeholder="PARENTESCO" >
+            <input type="text" id="parentesco_residente3" name="parentesco_residente3" placeholder="PARENTESCO" >
+            <input type="text" id="parentesco_residente4" name="parentesco_residente4" placeholder="PARENTESCO" >
 
             <label for="ocupacion_residente1">Ocupación:</label>
-            <input type="text" id="ocupacion_residente1" name="ocupacion_residente1" placeholder="OCUPACIÓN" required>
-            <input type="text" id="ocupacion_residente2" name="ocupacion_residente2" placeholder="OCUPACIÓN" required>
-            <input type="text" id="ocupacion_residente3" name="ocupacion_residente3" placeholder="OCUPACIÓN" required>
-            <input type="text" id="ocupacion_residente4" name="ocupacion_residente4" placeholder="OCUPACIÓN" required>
+            <input type="text" id="ocupacion_residente1" name="ocupacion_residente1" placeholder="OCUPACIÓN">
+            <input type="text" id="ocupacion_residente2" name="ocupacion_residente2" placeholder="OCUPACIÓN">
+            <input type="text" id="ocupacion_residente3" name="ocupacion_residente3" placeholder="OCUPACIÓN">
+            <input type="text" id="ocupacion_residente4" name="ocupacion_residente4" placeholder="OCUPACIÓN">
           </form>
         </div>
       </div>
@@ -171,11 +139,8 @@
 
     <!-- Botón Guardar y Continuar -->
     <div class="Boton_Guardar_Continuar">
-      <a href="/HTML/REGISTRO/Registro_Mascota.html">
-        <input type="submit" value="Guardar y Continuar">
-      </a>
+     <a href="/HTML/REGISTRO/Registro_Mascota.html"><button type="submit" class="Boton_Guardar_residente">Continuar</button></a>
     </div>
-    
   </div> <!-- Fin Cápsula principal -->
 </body>
 </html>

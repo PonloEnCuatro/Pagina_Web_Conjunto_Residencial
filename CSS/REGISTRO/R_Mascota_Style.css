@@ -37,7 +37,7 @@ h1, h2, h3 {
 }
 
 /* Contenedor Sección */
-.Seccion {
+.Capsula_Pricipal {
   border: 2px solid #ddd;
   max-width: 600px;
   margin: 20px auto;
@@ -46,37 +46,34 @@ h1, h2, h3 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Fecha de actualización */
-.fecha_Actualizacion {
-  border: 1px solid #ddd;
-  padding: 10px;
+/* Nombre del conjunto */
+.Titulo {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.Fecha {
-  text-align: center;
-  font-weight: bold;
-  font-size: 14px;
+/* REGISTRO DE MASCOTAS */
+.RegistroMascotas {
+  margin-bottom: 20px;
 }
 
-input[type="date"] {
-  display: block;
-  margin: 10px auto;
-  padding: 8px;
-  font-size: 14px;
-  width: 50%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.Colum_R_M {
+  margin-bottom: 20px;
 }
 
-/* Datos del Inmueble, Propietario y Arrendatario */
-label {
-  display: block;
+/* Formulario de registro de mascotas */
+#formMascota {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formMascota label {
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-input[type="text"], input[type="number"], input[type="email"] {
+#formMascota input[type="text"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -84,24 +81,18 @@ input[type="text"], input[type="number"], input[type="email"] {
   border-radius: 4px;
 }
 
-input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="date"]:focus {
+#formMascota input[type="text"]:focus {
   border-color: #4CAF50;
   outline: none;
 }
 
-/* COLUMNAS */
-.D_INM, .D_I, .D_P, .D_C_F {
-  columns: 4 200px;
-}
-
-
-/* Botón Guardar y Continuar */
-.Boton_Guardar_Continuar {
+/* Botón de enviar formulario de registro */
+.Boton_Enviar {
   text-align: center;
   margin-top: 20px;
 }
 
-.Boton_Guardar_residente {
+.Boton_Enviar_Completo {
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
@@ -112,15 +103,6 @@ input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus,
   transition: background-color 0.3s ease;
 }
 
-.Boton_Guardar_residente:hover {
+.Boton_Enviar_Completo:hover {
   background-color: #3e8e41;
-}
-
-/* Estilos adicionales */
-.Datos_Inmueble, .Datos_Propietario, .Datos_Arrendatario, .Datos_Inmobiliaria_Opcional, .DATOS_COMPOSI_FAMILIAR_RESIDE {
-  margin-bottom: 40px;
-}
-
-.Datos_Inmueble h2, .Datos_Propietario h2, .Datos_Arrendatario h2, .Datos_Inmobiliaria_Opcional h2, .DATOS_COMPOSI_FAMILIAR_RESIDE h2 {
-  margin-top: 20px;
 }
