@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de carros</title>
+    <link rel="stylesheet" href="/estilos/vehiculo_style.css">
+    <link rel="icon" type="image/x-icon" href="/imagenes/twin_tower_vector_twin_building_set_twin_building_icon_icon_188564.ico">
+    <script>
+        function inicio() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="Registro_vehiculo">
+        <div class="Datos_propietario">
+            <div class="Dat_Pro">
+                <h1>Informacion del propietario</h1>
+            </div>
+            <image class="car"><img src="/imagenes/car.jpg"></image>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="imagen" accept="image/*" required>
+                <image class="docus"><img src="/imagenes/document.jpg" width="310" height="180"></image>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <input type="file" name="imagen" accept="image/*" required>
+                    <input type="submit" value="Subir Imagen">
+                    <p>Informacion adicional</p>
+                    <textarea></textarea>
+        </div>
+
+        <div class="Reg_Veh">
+            <h1>Registro de vehiculos</h1>
+        </div>
+        <div class="Registro">
+            <h3>Datos del propietario</h3>
+        </div>
+        <div class="Data_prop">
+            <div class="D_P">
+                <form action="control_vehiculo.html">
+                    <h2>Propietario</h2>
+                    <input class="prop" name="nombres" id="nombres" placeholder="Nombres">
+                    <input class="prop" name="apellidos" id="apellidos" placeholder="Apellidos">
+                    <input class="prop" name="cedula" id="cedula" placeholder="Cedula">
+                    <input class="prop" name="telefono" id="telefono" placeholder="Telefono">
+                    <input class="prop" name="dereccion" id="dereccion" placeholder="Dereccion">
+                    <input class="prop" name="correo" id="correo" placeholder="Correo">
+                </form>
+            </div>
+        </div>
+        <div class="Data_vehi">
+            <div class="D_V">
+                <form action="control_vehiculo.html">
+                    <h2>Vehiculo</h2>
+                    <input class="vehi" name="marca" id="marca" placeholder="Marca">
+                    <input class="vehi" name="modelo" id="modelo" placeholder="Modelo">
+                    <input class="vehi" name="color" id="color" placeholder="Color">
+                    <input class="vehi" name="numero de placa" id="numero" placeholder="Numero de placa">
+                    <input class="vehi" name="año" id="año" placeholder="Año">
+                    <input class="vehi" name="tipo de vehiculo" id="tipo de vehiculo" placeholder="Tipo de vehiculo">
+                </form>
+            </div>
+            <p class="Terms">Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p>
+            <button class="button_send" onclick="inicio()" ,onclick="document.location.reload();"><a
+                    href="javascript:document.location.reload();"></a>Enviar</button>
+            <button class="button_save" onclick="inicio()"><a href=""></a>Guardar</button>
+        </div>
+    </div>
+
+    <div class="Entrada_salida">
+        <div class="Data_Visit"></div>
+        <h1>Datos del Propietario/visitante</h1>
+        <div class="Data_Vis_Data">
+            <div class="D_VI_D">
+                <form action="control_vehiculo.html">
+                    <h2>Datos del Propietario/visitante</h2>
+                    <input class="Vis_Data" name="nombres" id="nombresD" placeholder="Nombres">
+                    <input class="Vis_Data" name="apellidos" id="apellidosE" placeholder="Apellidos">
+                    <input class="Vis_Data" name="cedula" id="cedulaF" placeholder="Cedula">
+                    <input class="Vis_Data" name="telefono" id="telefonoG" placeholder="Telefono">
+                </form>
+            </div>
+            <p>Numero de apartamento</p>
+            <input class="apa" type="number" name="#" id="#">
+        </div>
+        <div class="Data_Vehi_Data">
+            <div class="D_VH_D">
+                <form action="control_vehiculo.html">
+                    <h2>Datos del vehiculo</h2>
+                    <input class="Vehi_Data" name="Placa" id="Placa" placeholder="Placa">
+                    <input class="Vehi_Data" name="Tipo_Vehiculo" id="Tipo_Vehiculo" placeholder="Tipo_Vehiculo">
+                    <input class="Vehi_Data" name="Marca/Modelo" id="Marca/Modelo" placeholder="Marca/Modelo">
+                    <input class="Vehi_Data" name="Color" id="Color" placeholder="Color">
+                </form>
+            </div>
+            <p>Informacion adicional</p>
+            <textarea></textarea>
+        </div>
+        <div class="Data_Entra_Sali"></div>
+        <h1>Datos de entrada/salida</h1>
+        <div class="Data_info_Entra_Sali">
+            <div class="D_I_E_S">
+                <form action="control_vehiculo.html">
+                    <h2>Informacion Entrada y salida</h2>
+                    <p>Entrada</p>
+                    <input class="Entra_Sali" type="date" name="Entrada" min="2024-10-01" max="2024-10-31" />
+                    <input class="Entra_Sali" type="time" name="Entrada" id="Entrada">
+                    <p>Salida</p>
+                    <input class="Entra_Sali" type="date" name="Salida" min="2024-10-01" max="2024-10-31" />
+                    <input class="Entra_Sali" type="time" name="Salida" id="Salida">
+                </form>
+            </div>
+            <h3>Visitante</h3>
+            <p>Motivo</p>
+            <textarea></textarea>
+            <p>Bahia asignada</p>
+            <input class="tante" type="number" name="Bahia" id="Bahia">
+            <p>Duracion de la estadia</p>
+            <input class="tante" type="time" name="Inicio" id="Inicio">
+            <input class="tante" type="time" name="Fin" id="Fin">
+        </div>
+        <div class="Data_tombo"></div>
+        <h1>Datos del registrador</h1>
+        <div class="Data_info_tombo">
+            <h2>Informacion del registrador</h2>
+            <input class="regis" name="nombres" id="nombresA" placeholder="Nombres">
+            <input class="regis" name="apellidos" id="apellidosB" placeholder="Apellidos">
+            <input class="regis" name="cedula" id="cedulaC" placeholder="Cedula">
+            <p>Informacion adicional</p>
+            <textarea></textarea>
+        </div>
+        <div class="centar">
+            <button class="button_save2" onclick="inicio()" ,onclick="document.location.reload();"><a
+                    href="javascript:document.location.reload();"></a>Guardar</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
